@@ -1,16 +1,12 @@
 {
-  "name": "copy-webpack-plugin",
-  "version": "11.0.0",
+  "name": "serial-copy-webpack-plugin",
+  "version": "11.1.0",
   "description": "Copy files && directories with webpack",
   "license": "MIT",
-  "repository": "webpack-contrib/copy-webpack-plugin",
+  "repository": "melenudo/serial-copy-webpack-plugin",
   "author": "Len Boyette",
-  "homepage": "https://github.com/webpack-contrib/copy-webpack-plugin",
-  "bugs": "https://github.com/webpack-contrib/copy-webpack-plugin/issues",
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/webpack"
-  },
+  "homepage": "https://github.com/melenudo/serial-copy-webpack-plugin",
+  "bugs": "https://github.com/melenudo/serial-copy-webpack-plugin/issues",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "engines": {
@@ -42,7 +38,7 @@
     "types"
   ],
   "peerDependencies": {
-    "webpack": "^5.1.0"
+    "webpack": "^5.0.0"
   },
   "dependencies": {
     "fast-glob": "^3.2.11",
@@ -81,7 +77,7 @@
     "prettier": "^2.6.2",
     "standard-version": "^9.3.1",
     "typescript": "^4.6.4",
-    "webpack": "^5.72.1"
+    "webpack": "5.72.1"
   },
   "keywords": [
     "webpack",

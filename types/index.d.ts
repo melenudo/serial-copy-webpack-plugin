@@ -96,6 +96,7 @@ export = CopyPlugin;
 /**
  * @typedef {Object} AdditionalOptions
  * @property {number} [concurrency]
+ * @property {number} [fsConcurrency]
  */
 /**
  * @typedef {Object} PluginOptions
@@ -135,6 +136,7 @@ declare class CopyPlugin {
    * @param {CacheFacade} cache
    * @param {ObjectPattern & { context: string }} inputPattern
    * @param {number} index
+   * @param {AdditionalOptions} options
    * @returns {Promise<Array<CopiedResult | undefined> | undefined>}
    */
   private static runPattern;
@@ -286,4 +288,5 @@ type ObjectPattern = {
 type Pattern = StringPattern | ObjectPattern;
 type AdditionalOptions = {
   concurrency?: number | undefined;
+  fsConcurrency?: number | undefined;
 };
